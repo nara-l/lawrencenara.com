@@ -1,0 +1,289 @@
+body,
+html {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    height: 100%;
+}
+body {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #424242;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+header,
+nav,
+footer,
+section,
+article,
+div {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+    min-height: 130px;
+    transition: min-height 0.3s;
+    border-bottom: 4px solid #7d97ad;
+    margin: 3em 0;
+    color: #2d3c49;
+    padding: 2em 0;
+}
+.header-left {
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+}
+.header-right {
+    width: 50%;
+    margin: 0 auto;
+    float: right;
+    text-align: right;
+}
+.header__logo {
+    height: 72px;
+    margin-right: 1em;
+    vertical-align: top;
+    margin-top: 12px;
+}
+.header .main-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.0em;
+    display: inline;
+}
+.header .main-sub-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+    width: 100%;
+    position: relative;
+    background-image: url("./images/sand-mandala-creation.jpg");
+    background-size: cover;
+    height: 500px;
+    margin-top: 2em;
+}
+/*
+ *
+ * Projects
+ *
+ */
+
+.projects {
+    padding: 0;
+}
+.projects__next {
+    width: 100%;
+}
+.projects__title {
+    color: #7d97ad;
+    font-size: 2.5em;
+    font-family: "Open Sans", sans-serif;
+    padding: 1em 0 0.5em 0.3em;
+}
+.projects__next__item {
+    display: inline-block;
+    width: 31.2%;
+    text-align: center;
+}
+.projects__next__item span {
+    display: block;
+}
+.projects__next__image {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.project-name {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em;
+    font-family: "Quicksand", sans-serif;
+    color: #2d3c49;
+}
+.project-padding-right {
+    margin-right: 1em;
+}
+.project-padding-left {
+    margin-left: 1em;
+}
+.project-padding {
+    margin: 1em;
+}
+/* Responsive */
+
+img {
+    max-width: 100%
+}
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+    border-top: 1px solid #E0E0E0;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+footer li {
+    display: inline-block;
+    margin: 0 1em;
+}
+footer a {
+    text-decoration: none;
+    color: #333;
+    padding: 1.5em;
+}
+/* MEDIA QUERIES */
+/* Mobiles in Portrait mode */
+
+@media screen and (max-width: 480px) {
+    .header {
+        min-height: 90px;
+        transition: min-height 0.3s;
+        border-bottom: 4px solid #7d97ad;
+        margin: 1.5em 0;
+        color: #2d3c49;
+        padding: 1em 0;
+    }
+    .header .main-text {
+        font-size: 3.5em;
+        display: inline;
+    }
+    .header .main-sub-text {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    .header-left {
+        display: none;
+    }
+    .header-right {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .projects__next__item {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    footer a {
+        text-decoration: none;
+        color: #333;
+        padding: 1.5em;
+        font-size: 12px;
+    }
+}
+/* 2nd break point 481 */
+
+@media screen and (max-width: 768px) {
+    .header {
+        min-height: 120px;
+        transition: min-height 0.3s;
+        border-bottom: 4px solid #7d97ad;
+        margin: 2.5em 0;
+        color: #2d3c49;
+        padding: 1em 0;
+    }
+    .header .main-text {
+        font-size: 4.0em;
+        display: inline;
+    }
+    .header .main-sub-text {
+
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    .header-left {
+        display: none;
+    }
+    .header-right {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .projects__next__item {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    footer a {
+        text-decoration: none;
+        color: #333;
+        padding: 1.5em;
+    }
+}
+/* Tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        min-height: 140px;
+        transition: min-height 0.3s;
+        border-bottom: 4px solid #7d97ad;
+        margin: 1.5em 0;
+        color: #2d3c49;
+        padding: 1em 0;
+    }
+    .header .main-text {
+        font-size: 3.5em;
+        display: inline;
+    }
+    .header .main-sub-text {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    .header-left {
+        float: left;
+        width: 33%;
+    }
+    .header-right {
+        width: 65%;
+        margin: 0 auto;
+        text-align: right;
+        float: right;
+    }
+    .projects__next__item {
+        display: inline-block;
+        width: 46%;
+        text-align: center;
+    }
+}
+/* Desktops and laptops */
+
+@media screen and (min-width: 1224px) {}
