@@ -42,18 +42,15 @@ ul {
     border-bottom: 4px solid #7d97ad;
     margin: 3em 0;
     color: #2d3c49;
-    padding: 2em 0;
+    padding: 1em 0;
+	width: 100%
 }
 .header-left {
-    width: 50%;
-    margin: 0 auto;
-    float: left;
+	float: left;
 }
 .header-right {
-    width: 50%;
-    margin: 0 auto;
-    float: right;
     text-align: right;
+	float: right;
 }
 .header__logo {
     height: 72px;
@@ -92,10 +89,11 @@ main {
 .hero {
     width: 100%;
     position: relative;
-    background-image: url("./images/sand-mandala-creation.jpg");
+    /*background-image: url("./images/sand-mandala-creation.jpg"); */
     background-size: cover;
-    height: 500px;
-    margin-top: 2em;
+    max-height: 500px;
+    margin-top: 1em;
+	
 }
 /*
  *
@@ -105,26 +103,26 @@ main {
 
 .projects {
     padding: 0;
+	margin: 1em 0;
 }
 .projects__next {
-    width: 100%;
+
 }
 .projects__title {
     color: #7d97ad;
     font-size: 2.5em;
     font-family: "Open Sans", sans-serif;
-    padding: 1em 0 0.5em 0.3em;
+    margin: 1em 0 0.5em 1em;
 }
 .projects__next__item {
     display: inline-block;
-    width: 31.2%;
     text-align: center;
+
 }
 .projects__next__item span {
     display: block;
 }
 .projects__next__image {
-    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .project-name {
@@ -135,15 +133,11 @@ main {
     font-family: "Quicksand", sans-serif;
     color: #2d3c49;
 }
-.project-padding-right {
-    margin-right: 1em;
+.project-link {
+	font-size: .9em;
+	
 }
-.project-padding-left {
-    margin-left: 1em;
-}
-.project-padding {
-    margin: 1em;
-}
+
 /* Responsive */
 
 img {
@@ -175,28 +169,30 @@ footer a {
 
 @media screen and (max-width: 480px) {
     .header {
-        min-height: 90px;
+        min-height: 100px;
         transition: min-height 0.3s;
         border-bottom: 4px solid #7d97ad;
-        margin: 1.5em 0;
         color: #2d3c49;
         padding: 1em 0;
+		margin: 0 auto;
+		margin-bottom: 3em;
+		
     }
     .header .main-text {
-        font-size: 3.5em;
+        font-size: 2.0em;
         display: inline;
     }
     .header .main-sub-text {
-        font-size: 2.5em;
+        font-size: 1.5em;
         font-weight: bold;
+		
     }
     .header-left {
-        display: none;
+		text-align: center;	
     }
     .header-right {
-        width: 100%;
-        margin: 0 auto;
         text-align: center;
+		padding-top: 1em;
     }
     .projects__next__item {
         display: inline-block;
@@ -212,44 +208,42 @@ footer a {
 }
 /* 2nd break point 481 */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px ) and (max-width: 767px) {
     .header {
-        min-height: 120px;
+        min-height: 110px;
         transition: min-height 0.3s;
         border-bottom: 4px solid #7d97ad;
         margin: 2.5em 0;
         color: #2d3c49;
         padding: 1em 0;
+		
     }
     .header .main-text {
-        font-size: 4.0em;
-        display: inline;
+        font-size: 2.5em;
     }
     .header .main-sub-text {
-
-        font-size: 2.5em;
+        font-size: 1.5em;
         font-weight: bold;
     }
     .header-left {
-        display: none;
+		float: left;
+		width: 30%;
     }
     .header-right {
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
+		text-align: right;
+		width: 70%;
     }
-    .projects__next__item {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
+
+
     footer a {
         text-decoration: none;
         color: #333;
         padding: 1.5em;
     }
 }
+
 /* Tablets */
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .header {
@@ -269,21 +263,11 @@ footer a {
         font-weight: bold;
     }
     .header-left {
-        float: left;
-        width: 33%;
+		float: left;
     }
     .header-right {
-        width: 65%;
-        margin: 0 auto;
         text-align: right;
-        float: right;
-    }
-    .projects__next__item {
-        display: inline-block;
-        width: 46%;
-        text-align: center;
+		float: right;
     }
 }
-/* Desktops and laptops */
 
-@media screen and (min-width: 1224px) {}

@@ -2,60 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Welcome to Lawrence Nara</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" >
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" >
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" >
 	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-    <header class="header">
-      <div class="header-left">
-        <img class="header__logo" src="images/logo.png" alt="Lawrence Nara - Full-Stack Web developer">
-      </div>
-	  <div class="header-right">
-		<div class="main-text"> 
-			 Lawrence Nara
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<header class="header">
+				  <div class="col-md-4 header-left">
+					<img class="header__logo img-fluid md-auto" src="images/logo.png" alt="Lawrence Nara - Full-Stack Web developer">
+				  </div>
+				  <div class="col-md-8 header-right">
+					<div class="main-text"> 
+						 Lawrence Nara
+					</div>
+					<div class="main-sub-text"> Full-Stack Web Developer </div>
+				  </div>
+				</header>
+			</div>
 		</div>
-		<div class="main-sub-text"> Full-Stack Web Developer </div>
-	  </div>
-    </header>
-
+	</div>
     <main>
-      <section class="content">
-        <section class="hero">
-          
-        </section>
-	
 
-        <section class="projects">
-		  <h1 class="projects__title">
-            Featured Works
-          </h1>
-          <ul class="projects__next">
-            <li class="projects__next__item project-padding-right">
-              <img class="projects__next__image" src="images/movie-trailer.png" alt="Movie Trailer Project">
-              <div class="project-name" >Movie Trailer Project</div>
-			  <div class="project-link" ><a href="https://goo.gl/8Sp1C5" title="Movie Trailer Project" > https://goo.gl/8Sp1C5</a></div>
-            </li>
-			<li class="projects__next__item project-padding">
-              <img class="projects__next__image" src="images/wasamundi-site.png" alt="Wasamundi - Country / City guide">
-              <div class="project-name" >Wasamundi - City guide</div>
-			  <div class="project-link" ><a href="http://wasamundi.com" title="Wasamundi project" > wasamundi.com </a></div>
-            </li>
-			<li class="projects__next__item project-padding-left">
-              <img class="projects__next__image" src="images/umhcs-project.png" alt="Universal Mobile Healthcare Systems - EHR / Membership portal">
-              <div class="project-name" >UMHCS - EHR / Membership</div>
-			  <div class="project-link" > <a href="https://umhcs.com" title="umhcs-electronic-health-record" >umhcs.com</a></div>
-            </li>
-          </ul>
-        </section>
+		<section class="content">
+		  	<div class="container">
+				<div class="row">
+					<section class="hero img-fluid">
+						<img src="images/sand-mandala-creation.jpg" class="img-fluid" alt="header image">
+					</section>
+		
+			<section class="projects">
+				<div class="container">
+					<div class="row">
+						  <h1 class="projects__title">
+							Featured Works
+						  </h1>
+						  <div class="projects__next col-md-12">
+							<div class="projects__next__item col-md-4">
+							  <img class="projects__next__image img-fluid" src="images/movie-trailer.png" alt="Movie Trailer Project">
+							  <p class="project-name" >Movie Trailer Project 
+							  <span class="project-link" ><a href="https://goo.gl/8Sp1C5" title="Movie Trailer Project" > goo.gl/8Sp1C5</a> </span>
+							  </p>
+							</div>
+							<div class="projects__next__item  col-md-4">
+							  <img class="projects__next__image img-fluid" src="images/wasamundi-site.png" alt="Wasamundi - Country / City guide">
+							  <p class="project-name" >Wasamundi - City guide
+							  <span class="project-link" ><a href="http://wasamundi.com" title="Wasamundi project" > wasamundi.com </a></span></p>
+							  
+							</div>
+							<div class="projects__next__item col-lg-4">
+							  <img class="projects__next__image img-fluid" src="images/umhcs-project.png" alt="Universal Mobile Healthcare Systems - EHR / Membership portal">
+							  <p class="project-name" >UMHCS - EHR / Membership
+							  <span class="project-link" > <a href="https://umhcs.com" title="umhcs-electronic-health-record" >umhcs.com</a></span></p>
+							  
+							</div>
+						  </div>
+					</div>
+				</div>
+					</section>
+			</div>
+				</div>
+		</section>
 
-      </section>
       <footer>
         <ul>
           <li><a href="lawrence.nara@gmail.com">contact</a></li>
@@ -65,5 +81,6 @@
         </ul>
       </footer>
     </main>
+	<!-- mandala source http://mediad.publicbroadcasting.net/p/idaho/files/201609/mandala_with_monks.jpg-->
   </body>
 </html>
